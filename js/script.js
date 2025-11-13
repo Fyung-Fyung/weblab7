@@ -1,11 +1,16 @@
 function init(){
 //add your javascrip between these two lines of code
-document.getElementById("entrybutton").addEventListener("click", alertme);
+
+document.getElementById("entrybutton").addEventListener("click",alertme);
+
 function alertme(){
-    var userinput = document.getElementById("entryinput".value);
-    alert("Mutanda Effiong:"+ userinput);
-    document.getElementById("textoutput").innerHTML = userinput;
+  var input = document.getElementById("entryinput").value;
+  alert("Mutanda Effiong: " + input);
+  document.getElementById("textoutput").innerHTML = input;
 }
 
-window.addEventListener('load', init);
 }
+
+
+
+window.addEventListener('load', init);
